@@ -1,0 +1,57 @@
+/* Composition */
+.container {
+  max-width: 1024px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.center-items {
+  display: flex;
+  align-items: center;
+}
+
+/* Blocks */
+.header {
+  display: none;
+}
+
+.chalkboard {
+  height: 45vh;
+}
+
+.terminal {
+  align-self: start;
+  height: 25vh;
+}
+
+.list {
+  list-style-type: decimal;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
