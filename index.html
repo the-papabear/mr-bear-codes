@@ -3,21 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/logo.svg">
+    <link rel="icon" href="assets/logo.svg" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Mr. Bear Codes</title>
   </head>
   <body>
+     <!-- Draw a prettier chalkboard border-->
     <main class="container">
-      <header class="header">
-        <p>English 101</p>
-        <p class="header__date">
-          the 1<sup>st</sup> of many great projects 2023
-        </p>
-      </header>
-
       <div class="content__wrapper">
+        <!-- TODO: Take this emoji idea and detail it into a more pleasing background -->
+        <span class="content__bg">👨‍🏫 >> 👨🏻‍💻</span>
         <div class="content__title">
           <p class="content__title--small">Lesson 1</p>
           <p>Hello, I'm Gabriel!</p>
@@ -30,27 +26,30 @@
             <span class="dot dot--green"></span>
           </div>
           <div class="terminal__content">
+            <div class="terminal__prompt">
+              <span class="terminal__user">(@gabriel)</span>
+              ➜
+              <span class="terminal__path">/from/zero/to/dev</span>
 
-          <div class="terminal__prompt">
-            <p>(gabriel) : ~/path/to/your/project/success</p>
-            <p>>> <span class="terminal__echo">echo</span> $INTRODUCTION</p>
+              >> <span class="terminal__echo">echo</span>
+              <span class="terminal__variable">$INTRODUCTION</span>
+            </div>
+
+            <article class="terminal__introduction">
+              Three years ago, I transitioned from the world of education and
+              writing to embark on a full-time journey in web development.
+              During this transformative period, I've immersed myself in the art
+              of crafting scalable solutions, dynamic web applications, and
+              captivating websites for a diverse range of clients in my
+              full-time role.
+            </article>
+
+            <ul class="terminal__sections">
+              <li class="sections__option">1. Portfolio</li>
+              <li class="sections__option">2. My Story</li>
+              <li class="sections__option">3. Work experience</li>
+            </ul>
           </div>
-
-          <article class="terminal__introduction">
-            Three years ago, I transitioned from the world of education and
-            writing to embark on a full-time journey in web development. During
-            this transformative period, I've immersed myself in the art of
-            crafting scalable solutions, dynamic web applications, and
-            captivating websites for a diverse range of clients in my full-time
-            role.
-          </article>
-
-          <ul class="terminal__sections">
-            <li>Portfolio</li>
-            <li>My Story</li>
-            <li>Work experience</li>
-          </ul>
-        </div>
         </section>
       </div>
       <section>

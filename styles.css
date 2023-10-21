@@ -6,21 +6,23 @@ body {
 }
 
 .container {
-  max-width: 1024px;
-  margin: 0.5rem auto;
-  background-color: green;
-  color: white;
   display: flex;
   flex-direction: column;
+
+  min-height: 100vh;
+  max-width: 1024px;
+  
+  background-color: green;
+  color: white;
+
+  margin: 0.5rem auto;
   border-radius: 8px;
   border: 0.5rem solid brown;
 }
 
-.header {
-  display: none;
-}
-
 .content__wrapper {
+  isolation: isolate;
+
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -28,7 +30,15 @@ body {
   padding: 1rem;
 }
 
+.content__bg {
+  position: absolute;
+  font-size: 250px;
+  opacity: 0.3;
+  bottom: 400px;
+}
+
 .content__title {
+  z-index: 10;
   flex: 1;
   justify-content: center;
   display: flex;
@@ -37,7 +47,7 @@ body {
   gap: 1rem;
   font-size: 4rem;
   text-align: center;
-  font-family:fantasy;
+  font-family: fantasy;
 }
 
 .content__title--small {
@@ -45,13 +55,24 @@ body {
 }
 
 .terminal {
+  flex: 0.3;
   background-color: purple;
   justify-self: flex-end;
   font-family: "JetBrains Mono";
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
 
+  opacity: 0.8;
   border: 1px solid darkgray;
   border-radius: 8px;
+}
+
+.terminal__user,
+.terminal__variable {
+  color: #2c833a;
+}
+
+.terminal__path {
+  color: #79c0ff;
 }
 
 .terminal__actionBar {
@@ -95,8 +116,14 @@ body {
   margin-bottom: 2rem;
 }
 
-.terminal__echo {
-  color: green;
+.terminal__sections {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.sections__option:hover {
+  background-color: white;
+  color: #2c833a;
 }
 
 .footer {
@@ -105,25 +132,10 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 587px) {
-  .container {
-    height: 100vh;
-  }
-}
-
 @media (min-width: 768px) {
-  .header {
-    display: inline-block;
-
-    font-size: 1.2rem;
-    padding: 2rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    font-family: "Fredericka the Great";
-  }
-
   .terminal__sections {
     display: flex;
     gap: 2rem;
+    font-size: 1.1rem;
   }
 }
