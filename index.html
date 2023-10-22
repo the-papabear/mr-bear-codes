@@ -6,64 +6,63 @@
     <link rel="icon" href="assets/logo.svg" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Mr. Bear Codes</title>
+    <title>Mr Bear Codes revamped</title>
   </head>
   <body>
-     <!-- Draw a prettier chalkboard border-->
-    <main class="container">
-      <div class="content__wrapper">
-        <!-- TODO: Take this emoji idea and detail it into a more pleasing background -->
-        <span class="content__bg">👨‍🏫 >> 👨🏻‍💻</span>
-        <div class="content__title">
-          <p class="content__title--small">Lesson 1</p>
-          <p>Hello, I'm Gabriel!</p>
+    <div class="container">
+      <div class="triangle"></div>
+      <img
+        src="assets/scroll-touch-display.svg"
+        alt="scroll touch indicator icon"
+        class="scroll__touch"
+      />
+      <img
+        src="assets/scroll.svg"
+        alt="scroll touch mouse icon"
+        class="scroll__mouse"
+      />
+      <header>
+        <img
+          width="80"
+          height="50"
+          src="assets/logo.svg"
+          alt="mr. bear codes logo"
+        />
+        <div class="categories">
+          <span>Home</span>
+          <span>About me</span>
+          <span>Portfolio</span>
+          <span>My story</span>
+          <span>Blog</span>
         </div>
+      </header>
 
-        <section class="terminal">
-          <div class="terminal__actionBar">
-            <span class="dot dot--red"></span>
-            <span class="dot dot--yellow"></span>
-            <span class="dot dot--green"></span>
-          </div>
-          <div class="terminal__content">
-            <div class="terminal__prompt">
-              <span class="terminal__user">(@gabriel)</span>
-              ➜
-              <span class="terminal__path">/from/zero/to/dev</span>
-
-              >> <span class="terminal__echo">echo</span>
-              <span class="terminal__variable">$INTRODUCTION</span>
-            </div>
-
-            <article class="terminal__introduction">
-              Three years ago, I transitioned from the world of education and
-              writing to embark on a full-time journey in web development.
-              During this transformative period, I've immersed myself in the art
-              of crafting scalable solutions, dynamic web applications, and
-              captivating websites for a diverse range of clients in my
-              full-time role.
-            </article>
-
-            <ul class="terminal__sections">
-              <li class="sections__option">1. Portfolio</li>
-              <li class="sections__option">2. My Story</li>
-              <li class="sections__option">3. Work experience</li>
-            </ul>
-          </div>
-        </section>
-      </div>
-      <section>
-        <!-- Portfolio section -->
+      <section class="greeting">
+        <div class="greeting__title">
+          <p class="greeting__title--small">Lesson 1</p>
+          <p>Hello, I'm Gabriel!</p>
+          <p class="greeting__title--small">
+            I'm an <span class="job-1">English Teacher</span> turned
+            <span class="job-2">Full-stack Web developer</span>
+          </p>
+        </div>
       </section>
 
-      <section>
-        <!-- My story section -->
-      </section>
-
-      <section>
-        <!-- CV - Work experience section -->
-      </section>
-    </main>
-    <footer class="footer"><small>&copy Gabriel R. Ursu 2023</small></footer>
+      <section data-sectionName="about-me"></section>
+    </div>
+    <section class="about-me">
+      <!-- TODO: Add an image of me instead of this div -->
+      <div
+        style="width: 50%; height: 500px; background-color: aquamarine"
+      ></div>
+      <article class="about-me__description">
+        <h1>About me</h1>
+        Three years ago, I transitioned from the world of education to embark on
+        a full-time journey in web development. During this transformative
+        period, I've immersed myself in the art of crafting scalable solutions,
+        dynamic web applications, and captivating websites for a diverse range
+        of clients in my full-time role.
+      </article>
+    </section>
   </body>
 </html>
