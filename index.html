@@ -9,19 +9,8 @@
     <title>Mr Bear Codes</title>
   </head>
   <body>
-    <div class="container">
-      <div class="triangle"></div>
-      <img
-        src="assets/scroll-touch-display.svg"
-        alt="scroll touch indicator icon"
-        class="scroll__touch"
-      />
-      <img
-        src="assets/scroll.svg"
-        alt="scroll touch mouse icon"
-        class="scroll__mouse"
-      />
-      <header>
+    <header>
+      <div class="header__wrapper">
         <img
           width="80"
           height="50"
@@ -35,27 +24,38 @@
           <span>Portfolio</span>
           <span>Blog</span>
         </div>
-      </header>
+      </div>
+    </header>
+    <div class="container">
+      <div class="triangle"></div>
+      <img
+        src="assets/scroll-touch-display.svg"
+        alt="scroll touch indicator icon"
+        class="scroll__touch"
+      />
+      <img
+        src="assets/scroll.svg"
+        alt="scroll touch mouse icon"
+        class="scroll__mouse"
+      />
 
       <section class="greeting">
         <div class="greeting__title">
           <p class="greeting__title--small">Lesson 1</p>
           <p>Hello, I'm Gabriel!</p>
           <p class="greeting__title--small">
-            I'm an <span class="job-1">English Teacher</span> turned
-            <span class="job-2">Full-stack Web developer</span>
+            I'm an English Teacher turned Full-stack Web developer
           </p>
         </div>
       </section>
-
-      <section data-sectionName="about-me"></section>
     </div>
+
     <section class="section about-me">
       <div class="image__container">
         <img src="assets/mr bear.jpg" alt="my face" />
       </div>
       <article class="about-me__description">
-        <h1>About me</h1>
+        <h1>ABOUT ME</h1>
         <p>
           Three years ago, I transitioned from the world of education to embark
           on a full-time journey in web development. During this transformative
@@ -67,22 +67,62 @@
     </section>
 
     <section class="section skill-set">
-      <h1>Skill set</h1>
+      <h1>SKILL SET</h1>
+
       <div class="skill-set__categories">
-        <div class="skill-set__category"><p>UI Building</p></div>
-        <div class="skill-set__category"><p>Styling</p></div>
-        <div class="skill-set__category"><p>Back end</p></div>
-        <div class="skill-set__category"><p>Testing</p></div>
-        <div class="skill-set__category"><p>Workflow</p></div>
+        <div class="card ui-building">
+          <p>UI Building</p>
+          <div class="tool-list__wrapper">
+            <div class="tool-icons__wrapper">
+              <img src="assets/framework-icons/html-logo.svg" alt="html logo" />
+              <span>HTML</span>
+            </div>
+            <div class="tool-icons__wrapper">
+              <img src="assets/framework-icons/js-logo.svg" alt="" />
+              <span>Javascript</span>
+            </div>
+            <div class="tool-icons__wrapper">
+              <img src="assets/framework-icons/ts-logo.svg" alt="" />
+              <span>Typescript</span>
+            </div>
+            <div class="tool-icons__wrapper">
+              <img src="assets/framework-icons/react-logo.svg" alt="" />
+              <span>React</span>
+            </div>
+            <div class="tool-icons__wrapper">
+              <img src="assets/framework-icons/nextjs-logo.svg" alt="" />
+              <span>Next.js</span>
+            </div>
+            <div class="tool-icons__wrapper">
+              <img src="assets/framework-icons/radix-ui-logo.svg" alt="" />
+              <span>Radix</span>
+            </div>
+            <div class="tool-icons__wrapper">
+              <img src="assets/framework-icons/antd-logo.svg" alt="" />
+              <span>Ant Design</span>
+            </div>
+          </div>
+        </div>
+        <div class="card"><p>Styling</p></div>
+        <div class="card"><p>Back end</p></div>
+        <div class="card"><p>Testing</p></div>
+        <div class="card"><p>Workflow</p></div>
       </div>
     </section>
 
     <section class="section portfolio">
-      <h1>Portfolio</h1>
+      <h1>PORTFOLIO</h1>
+      <div class="portfolio__cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
     </section>
     <section class="section blog">
-      <h1>Latest blog posts</h1>
+      <h1>BLOG POSTS</h1>
+      <h2 class="coming-soon">COMING SOON</h2>
     </section>
-    <footer></footer>
   </body>
 </html>
