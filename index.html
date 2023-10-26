@@ -9,35 +9,8 @@
     <title>Mr Bear Codes</title>
   </head>
   <body>
-    <header>
-      <div class="header__wrapper">
-        <img
-          width="80"
-          height="50"
-          src="assets/logo.svg"
-          alt="mr. bear codes logo"
-        />
-        <div class="categories">
-          <span>Home</span>
-          <span>About me</span>
-          <span>Skill set</span>
-          <span>Portfolio</span>
-          <span>Blog</span>
-        </div>
-      </div>
-    </header>
-    <div class="container">
-      <div class="triangle"></div>
-      <img
-        src="assets/scroll-touch-display.svg"
-        alt="scroll touch indicator icon"
-        class="scroll__touch"
-      />
-      <img
-        src="assets/scroll.svg"
-        alt="scroll touch mouse icon"
-        class="scroll__mouse"
-      />
+    <div class="greeting__wrapper">
+      <img src="assets/scroll.svg" alt="mouse scroll icon" class="scroll" />
 
       <section class="greeting">
         <div class="greeting__title">
@@ -71,7 +44,7 @@
 
       <div class="skill-set__categories">
         <div class="card ui-building">
-          <p>UI Building</p>
+          <p class="card__title">UI</p>
           <div class="tool-list__wrapper">
             <div class="tool-icons__wrapper">
               <img src="assets/framework-icons/html-logo.svg" alt="html logo" />
@@ -103,10 +76,10 @@
             </div>
           </div>
         </div>
-        <div class="card"><p>Styling</p></div>
-        <div class="card"><p>Back end</p></div>
-        <div class="card"><p>Testing</p></div>
-        <div class="card"><p>Workflow</p></div>
+        <div class="card"><p class="card__title">STYLING</p></div>
+        <div class="card"><p class="card__title">BACK END</p></div>
+        <div class="card"><p class="card__title">TESTING</p></div>
+        <div class="card"><p class="card__title">WORKFLOW</p></div>
       </div>
     </section>
 
@@ -122,7 +95,24 @@
     </section>
     <section class="section blog">
       <h1>BLOG POSTS</h1>
-      <h2 class="coming-soon">COMING SOON</h2>
+      <div class="blog__posts">
+        <div class="card blog__post">
+          <div class="blog__poster">
+            <img src="assets/ts-pattern.svg" alt="thinslices pattern" />
+          </div>
+          <h3 class="post__title">
+            THE HUMBLE BEGINNINGS OF AN ASPIRING WEB DEVELOPER
+          </h3>
+          <a
+            class="read__more"
+            target="_blank"
+            href="https://www.thinslices.com/insights/learning-and-becoming-a-web-developer"
+            >READ MORE</a
+          >
+        </div>
+        <div class="card">MORE POSTS COMMING SOON</div>
+        <div class="card">MORE POSTS COMMING SOON</div>
+      </div>
     </section>
   </body>
 </html>
