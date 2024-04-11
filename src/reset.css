@@ -37,6 +37,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(73, 80, 87);
 }
 
 /* Set shorter line heights on headings and interactive elements */
