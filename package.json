@@ -1,0 +1,9 @@
+{
+  "name": "mr-bear-codes",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
