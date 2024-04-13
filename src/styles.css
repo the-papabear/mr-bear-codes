@@ -1,3 +1,8 @@
+.wrapper,
+.aboutMe {
+  max-width: 1024px;
+}
+
 .presentation {
   height: 90vh;
   padding-top: 3rem;
@@ -10,7 +15,6 @@
   flex-direction: column;
 
   height: 100%;
-  max-width: 1024px;
 
   margin: 0 auto;
 }
@@ -35,6 +39,7 @@
 
 .introduction__profession {
   font-size: 1.3rem;
+  color: #676c71;
 }
 
 .introduction__details {
@@ -122,6 +127,8 @@
 }
 
 .cta__btn {
+  all: unset;
+
   background-color: transparent;
   border: 1px solid #dee2e6;
   border-radius: 1rem;
@@ -131,6 +138,35 @@
 .cta__btn:hover {
   cursor: pointer;
   background-color: #dee2e6;
+}
+
+.aboutMe {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 3rem 1rem 1rem;
+
+  text-align: center;
+  font-size: 14px;
+}
+
+.aboutMe__name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.aboutMe__title {
+  color: #676c71;
+  font-weight: 400;
+}
+
+.aboutMe__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 @media only screen and (min-width: 480px) {
@@ -170,5 +206,9 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
+  }
+
+  .aboutMe {
+    text-align: start;
   }
 }
