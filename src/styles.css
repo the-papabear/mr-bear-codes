@@ -13,14 +13,18 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 
   margin: 0 auto;
 }
 
-.img__wrapper {
-  display: flex;
-  align-items: end;
-  justify-content: center;
+.programmer__img {
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+  align-self: center;
+  padding: 0 1rem;
 }
 
 .introduction {
@@ -188,6 +192,12 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+@media only screen and (max-height: 699px) {
+  .programmer__img {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
