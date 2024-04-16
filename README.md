@@ -10,3 +10,4 @@ This is a portfolio page made with vanilla HTML, CSS, and Javascript.
 - [x] Dynamic experience counter in the summary element
 - [ ] Clickable summary elements that redirect to the specified section
 - [ ] Dark theme because why not
+- [ ] Research and implement a system for your CSS to minify redundancy
