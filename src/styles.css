@@ -1,6 +1,13 @@
+* {
+  --primary: #00b0ff;
+}
+
 .wrapper,
 .aboutMe,
-.newest__articles {
+.cta,
+.personal__projects,
+.newest__articles,
+.footer {
   max-width: 960px;
   margin: 0 auto;
 }
@@ -130,7 +137,7 @@
   display: flex;
   flex-direction: column;
 
-  padding: 3rem 1rem 1rem;
+  padding: 3rem 1rem 0rem 1rem;
 
   text-align: center;
   font-size: 0.8rem;
@@ -142,7 +149,8 @@
   gap: 0.3rem;
 }
 
-.aboutMe__title {
+.aboutMe__title,
+.personal__projects h5 {
   color: #676c71;
   font-weight: 400;
 }
@@ -152,21 +160,72 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.personal__projects {
+  padding: 3rem 1rem 0 1rem;
+  text-align: center;
+}
+
+.personal__projects h3 {
+  padding-top: 2rem;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 3rem 1rem 0 1rem;
+}
+
+.cta__message {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 0.25rem;
+  padding: 2rem;
+
+  color: #f8f9fa;
+  background-color: var(--primary);
+}
+
+.cta__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta__socials a {
+  all: unset;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  color: black;
+  padding: 10px 14px;
+  border-radius: 50px;
+}
+
+.cta__socials a:hover {
+  background-color: #e2e6ea;
+}
+
 .newest__articles {
+  gap: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 2rem;
-  padding: 1rem;
-  padding-top: 3rem;
+  justify-content: center;
+
+  padding: 3rem 1rem 0 1rem;
 }
 
 .article__cards {
+  gap: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+
   max-height: 500px;
 }
 
@@ -205,7 +264,7 @@
   all: unset;
 
   cursor: pointer;
-  color: #00b0ff;
+  color: var(--primary);
   padding-top: 1rem;
 }
 
@@ -213,6 +272,12 @@
   overflow: hidden;
   text-align: center;
   font-size: 0.8rem;
+}
+
+.footer {
+  margin-top: 3rem;
+
+  height: 100px;
 }
 
 @media only screen and (max-height: 699px) {
@@ -227,11 +292,24 @@
     font-size: 1rem;
   }
 
+  .cta__socials {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .article__cards {
     flex-direction: row;
   }
 
   .article__card p {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cta__message {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
