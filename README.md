@@ -1,6 +1,6 @@
 # mr-bear-codes
 
-This is a portfolio page made with vanilla HTML, CSS, and Javascript.
+My personal portfolio page made with vanilla HTML, CSS, and Javascript. Deployment available at [this link](https://the-papabear.github.io/mr-bear-codes/).
 
 ---
 
