@@ -4,25 +4,17 @@
 
 .wrapper,
 .aboutMe,
-.cta,
 .personal__projects,
+.cta,
 .newest__articles,
 .footer {
-  max-width: 960px;
+  max-width: 1280px;
   margin: 0 auto;
-}
-
-.presentation {
-  height: 90vh;
-  padding-top: 1rem;
-
-  border-bottom: 1px solid #dee2e6;
+  padding: 40px 20px;
 }
 
 .wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 
@@ -30,16 +22,11 @@
   width: 100%;
   height: auto;
   max-width: 650px;
-  align-self: center;
-  padding: 0 1rem;
+  margin: 0 auto;
 }
 
 .introduction {
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-
-  padding: 1rem;
+display:none;
 }
 
 .introduction__greeting {
@@ -91,16 +78,20 @@
 
 .summary {
   display: flex;
-  margin-top: -70px;
   position: relative;
   align-items: center;
   justify-content: center;
 }
 
+.summary__divider {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #dee2e6;
+}
+
 .summary__list {
+  z-index: 10;
   display: flex;
-  padding: 1rem;
-  margin: 0.5rem;
   max-width: 400px;
   border-radius: 10rem;
   background-color: #fff;
@@ -137,8 +128,6 @@
   display: flex;
   flex-direction: column;
 
-  padding: 3rem 1rem 0rem 1rem;
-
   text-align: center;
   font-size: 0.8rem;
 }
@@ -162,7 +151,6 @@
 }
 
 .personal__projects {
-  padding: 3rem 1rem 0 1rem;
   text-align: center;
 }
 
@@ -174,8 +162,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  padding: 3rem 1rem 0 1rem;
 }
 
 .cta__message {
@@ -216,8 +202,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
-  padding: 3rem 1rem 0 1rem;
 }
 
 .article__cards {
@@ -291,12 +275,6 @@
   border: 2px solid var(--primary);
 }
 
-@media only screen and (max-height: 699px) {
-  .programmer__img {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .aboutMe {
     text-align: start;
@@ -323,6 +301,14 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .introduction {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 1rem;
+  }
+
   .cta__message {
     flex-direction: row;
     justify-content: space-between;
