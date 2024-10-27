@@ -37,9 +37,9 @@ ol[role="list"] {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  line-height: 1.5;
+  line-height: 1.6;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(73, 80, 87);
+  color: #495057;
 }
 
 /* Set shorter line heights on headings and interactive elements */
