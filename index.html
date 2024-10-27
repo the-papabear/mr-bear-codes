@@ -6,35 +6,31 @@
     <link rel="stylesheet" type="text/css" href="./src/reset.css" />
     <link rel="stylesheet" type="text/css" href="./src/styles.css" />
     <link
-      type="image/svg"
-      rel="shortcut icon"
-      href="./assets/file-code-2.svg"
+      type="image/x-icon"
+      rel="icon"
+      href="./assets/mr-bear-codes-logo.ico"
     />
+    <script type="module" src="./src/index.js" defer></script>
     <title>Mr Bear Codes</title>
   </head>
   <body>
-    <main class="presentation">
-      <div class="wrapper">
-        <section class="introduction">
-          <p class="introduction__greeting">Hello, I'm</p>
-          <div class="introduction__me__container">
-            <h1 class="introduction__me">Gabriel Ursu</h1>
-          </div>
-
-          <div>
-            <p class="introduction__profession">Web developer</p>
-            <p class="introduction__location">
-              building web products from Iasi, Romania
-            </p>
-          </div>
-        </section>
-        <object
-          type="image/svg+xml"
-          class="programmer__img"
-          data="./assets/programming.svg"
-        ></object>
+    <section class="section hero">
+      <div>
+        <p class="hero__greeting">Hello, I'm</p>
+        <h1 class="hero__greeting--whoami hero__greeting--left-offset">
+          <strong>Gabriel Ursu</strong>
+        </h1>
+        <h2 class="hero__greeting"><strong>Web developer</strong></h2>
+        <p class="hero__greeting--left-offset">
+          building web products from Iasi, Romania
+        </p>
       </div>
-    </main>
+      <object
+        type="image/svg+xml"
+        class="svg__defaults"
+        data="./assets/programming.svg"
+      ></object>
+    </section>
     <section class="summary">
       <div class="summary__divider"></div>
       <div class="summary__list">
@@ -52,7 +48,7 @@
         </div>
       </div>
     </section>
-    <section class="aboutMe" id="aboutMe">
+    <section class="section" id="about-me">
       <div class="aboutMe__name">
         <h3>Gabriel Ursu</h3>
         <h4 class="aboutMe__title">Web Developer</h4>
@@ -79,17 +75,12 @@
       </div>
     </section>
 
-    <section class="personal__projects">
+    <section class="section">
       <h3>Learning by doing</h3>
       <h5>Stuff I've built</h5>
-      <object
-      type="image/svg+xml"
-      class="programmer__img"
-      data="./assets/under-construction.svg"
-    ></object>
     </section>
 
-    <section class="cta">
+    <section class="section">
       <div class="cta__message">
         <div>
           <h3>Fancy a detailed chat?</h3>
@@ -106,7 +97,7 @@
       </div>
     </section>
 
-    <section class="newest__articles">
+    <section class="section">
       <h3>I write stuff sometimes</h3>
       <div class="article__cards">
         <div class="article__card">
@@ -132,7 +123,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="section">
       <a
         class="footer__item"
         href="https://www.linkedin.com/in/gabriel-ursu/"
@@ -155,6 +146,5 @@
         <img src="./assets/mail.svg" alt="email logo" />
       </a>
     </footer>
-    <script type="module" src="./src/index.js"></script>
   </body>
 </html>

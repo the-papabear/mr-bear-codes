@@ -1,82 +1,59 @@
+/* FRESH CSS */
+
 * {
   --primary: #00b0ff;
+  /* TODO: Look for a secondary color */
+  --secondary: transparent;
+  --text-alt: #676c71;
 }
 
-.wrapper,
-.aboutMe,
-.personal__projects,
-.cta,
-.newest__articles,
-.footer {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.wrapper {
-  display: flex;
-  height: 100%;
-}
-
-.programmer__img {
+.svg__defaults {
   width: 100%;
   height: auto;
   max-width: 650px;
   margin: 0 auto;
 }
 
-.introduction {
-display:none;
+.section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
 }
 
-.introduction__greeting {
-  font-weight: 500;
-  font-size: 1.8rem;
+.hero {
+  gap: 1.5rem;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+
+  padding-bottom: 0;
 }
 
-.introduction__me {
-  font-weight: 700;
+/* TODO: Increase font size for greeting and whoami after the breakpoint */
+.hero__greeting {
+  font-size: 1.5rem;
+}
+
+.hero__greeting--whoami {
   font-size: 4rem;
 }
 
-.introduction__me__container {
-  display: flex;
-}
-
-.introduction__link {
-  min-width: 24px;
-  min-height: 24px;
-}
-
-.introduction__profession {
-  font-size: 1.3rem;
-  color: #676c71;
-  font-weight: 600;
-}
-
-.introduction__location {
-  font-size: 1rem;
+.hero__greeting--left-offset {
   padding-left: 1.5rem;
-  color: #868686;
 }
 
-.introduction__details {
-  all: unset;
-
-  gap: 1rem;
-  display: flex;
-  list-style: none;
-  padding-left: 2rem;
-  flex-direction: column;
+@media only screen and (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+  }
 }
 
-.introduction__details__item {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
+/* ****************************** */
+
+/* OLD CSS - TO BE IMPROVED */
 
 .summary {
+  padding: 1.5rem;
   display: flex;
   position: relative;
   align-items: center;
@@ -273,44 +250,4 @@ display:none;
   border-radius: 50%;
 
   border: 2px solid var(--primary);
-}
-
-@media only screen and (min-width: 768px) {
-  .aboutMe {
-    text-align: start;
-    font-size: 1rem;
-  }
-
-  .cta__socials {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .article__cards {
-    flex-direction: row;
-  }
-
-  .article__card p {
-    font-size: 1rem;
-  }
-
-  .footer {
-    justify-content: flex-end;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .introduction {
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-  
-    padding: 1rem;
-  }
-
-  .cta__message {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
