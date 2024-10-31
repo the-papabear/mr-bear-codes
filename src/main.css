@@ -1,10 +1,25 @@
-/* FRESH CSS */
-
 * {
-  --primary: #00b0ff;
-  /* TODO: Look for a secondary color */
-  --secondary: transparent;
-  --text-alt: #676c71;
+  /* Color pallete */
+  --primary-color: #007acc;
+  --primary-hover-color: #005fa3;
+  --secondary-color: #9fa7af;
+  --background-color: #ffffff;
+  --light-gray: #dee2e6;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --error-color: #dc3545;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+  --spacing-extra-large: 64px;
+
+  /* Font sizes */
+  --font-base: 1rem;
+  --font-medium: 1.5rem;
+  --font-large: 2rem;
+  --font-extra-large: 4rem;
 }
 
 .svg__defaults {
@@ -17,68 +32,48 @@
 .section {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem;
+  padding: var(--spacing-large) var(--spacing-medium);
 }
 
 .hero {
-  gap: 1.5rem;
+  gap: var(--spacing-large);
   display: flex;
   place-items: center;
   flex-direction: column;
-
-  padding-bottom: 0;
 }
 
-/* TODO: Increase font size for greeting and whoami after the breakpoint */
 .hero__greeting {
-  font-size: 1.5rem;
+  font-size: var(--font-medium);
 }
 
 .hero__greeting--whoami {
-  font-size: 4rem;
+  font-size: var(--font-extra-large);
+  padding-bottom: var(--spacing-medium);
 }
 
 .hero__greeting--left-offset {
   padding-left: 1.5rem;
 }
 
-@media only screen and (min-width: 1024px) {
-  .hero {
-    flex-direction: row;
-  }
+.summary__divider {
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
-/* ****************************** */
-
-/* OLD CSS - TO BE IMPROVED */
-
 .summary {
-  padding: 1.5rem;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
 }
 
-.summary__divider {
-  position: absolute;
-  width: 100%;
-  border-bottom: 1px solid #dee2e6;
-}
-
 .summary__list {
-  z-index: 10;
   display: flex;
-  max-width: 400px;
   border-radius: 10rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
+  background-color: var(--background-color);
   box-shadow: 0 0 30px rgba(173, 181, 189, 0.4);
-}
-
-.summary__item__title {
-  opacity: 0.6;
-  text-align: center;
 }
 
 .summary__item {
@@ -87,77 +82,34 @@
   padding: 0.5rem;
   align-items: center;
   flex-direction: column;
-  border-right: 1px solid #dee2e6;
+  border-right: 1px solid var(--light-gray);
 }
 
 .summary__item:last-child {
   border-right: none;
 }
 
-.icon {
-  width: 18px;
-  height: 18px;
-  stroke: #dee2e6;
-}
-
-.aboutMe {
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;
-
+.summary__item__title {
+  color: var(--secondary-color);
   text-align: center;
-  font-size: 0.8rem;
-}
-
-.aboutMe__name {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.aboutMe__title,
-.personal__projects h5 {
-  color: #676c71;
-  font-weight: 400;
-}
-
-.aboutMe__details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.personal__projects {
-  text-align: center;
-}
-
-.personal__projects h3 {
-  padding-top: 2rem;
 }
 
 .cta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.cta__message {
   gap: 2rem;
   display: flex;
   flex-direction: column;
 
-  border-radius: 0.25rem;
-  padding: 2rem;
+  padding: var(--spacing-medium);
 
   color: #f8f9fa;
-  background-color: var(--primary);
+  background-color: var(--primary-color);
 }
 
 .cta__socials {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  gap: var(--spacing-medium);
+  text-align: center;
 }
 
 .cta__socials a {
@@ -171,14 +123,6 @@
 
 .cta__socials a:hover {
   background-color: #e2e6ea;
-}
-
-.newest__articles {
-  gap: 2rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .article__cards {
@@ -195,12 +139,13 @@
   gap: 0.5rem;
   flex-direction: column;
 
-  box-shadow: 2px 3px 10px rgba(206, 212, 218, 0.3);
+  box-shadow: 0 0 30px rgba(173, 181, 189, 0.4);
   border: 1px solid #dee2e6;
   width: 100%;
   /* TODO: You can remove max-width once you get more articles in */
   max-width: 300px;
   height: auto;
+  border-radius: var(--spacing-small);
 }
 
 .article__card > img {
@@ -239,15 +184,32 @@
 .footer {
   gap: 1rem;
   display: flex;
+  align-items: center;
   justify-content: center;
 
-  margin-top: 3rem;
-  padding: 0 1rem 1rem 1rem;
+  padding: var(--spacing-medium);
+  background-color: var(--light-gray);
 }
 
 .footer__item {
   padding: 0.5rem;
   border-radius: 50%;
 
-  border: 2px solid var(--primary);
+  border: 2px solid var(--primary-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .cta {
+    text-align: center;
+  }
+  .cta__socials {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+  }
 }
