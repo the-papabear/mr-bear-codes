@@ -35,6 +35,12 @@
   padding: var(--spacing-large) var(--spacing-medium);
 }
 
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero {
   gap: var(--spacing-large);
   display: flex;
@@ -63,10 +69,7 @@
 }
 
 .summary {
-  display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
 }
 
 .summary__list {
@@ -117,7 +120,7 @@
   cursor: pointer;
   background-color: #f8f9fa;
   color: black;
-  padding: 10px 14px;
+  padding: var(--spacing-small) var(--spacing-medium);
   border-radius: 50px;
 }
 
@@ -125,67 +128,8 @@
   background-color: #e2e6ea;
 }
 
-.article__cards {
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  max-height: 500px;
-}
-
-.article__card {
-  display: flex;
-  gap: 0.5rem;
-  flex-direction: column;
-
-  box-shadow: 0 0 30px rgba(173, 181, 189, 0.4);
-  border: 1px solid #dee2e6;
-  width: 100%;
-  /* TODO: You can remove max-width once you get more articles in */
-  max-width: 300px;
-  height: auto;
-  border-radius: var(--spacing-small);
-}
-
-.article__card > img {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
-}
-
-.article__details {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
-  gap: 0.5rem;
-}
-
-.article__card h4 {
-  text-align: center;
-}
-
-.article__card a {
-  all: unset;
-
-  cursor: pointer;
-  color: var(--primary);
-  padding-top: 1rem;
-}
-
-.article__card p {
-  overflow: hidden;
-
-  font-size: 0.8rem;
-  text-align: center;
-}
-
 .footer {
   gap: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   padding: var(--spacing-medium);
   background-color: var(--light-gray);
